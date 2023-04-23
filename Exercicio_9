@@ -1,0 +1,32 @@
+algoritmo "Exer9_Lista2"
+var
+   num, num1: inteiro
+   maior, menor: inteiro
+
+inicio
+   escreva ("Informe dois valores inteiro: ")
+   leia (num, num1)
+
+   se (num > num1 ) entao
+
+      maior <- num
+      menor <- num1
+      escreval ("O primerio numero informado ", maior, " é o maior ")
+      escreva ("O segundo numero informado ", menor, " é o menor ")
+
+   senao
+      se (num1 > num) entao
+
+         maior <- num1
+         menor <- num
+         escreval ("O segundo numero ", maior, " é o maior ")
+         escreva ("O primeiro numero ", menor, " é o menor ")
+
+      senao
+
+         escreva ("Os dois numeros sao iguais! ", num, " e", num1)
+
+      fimse
+   fimse
+
+fimalgoritmo

@@ -1,0 +1,24 @@
+algoritmo "Exer2_Lista2"
+var
+   ano, ano_nas, idade: inteiro
+inicio
+   escreva ("Informe o ano que estamos: ")
+   leia (ano)
+   escreva ("Informe seu ano de nascimento: ")
+   leia (ano_nas)
+
+   idade <- ano - ano_nas
+
+   se idade < 0 entao
+      escreva ("Erro!!! Voce ainda não nasceu hahha!! ")
+   senao
+      se idade >= 18 entao
+         escreva ("Voce tem ", idade, " anos, ja pode votar! ")
+
+      senao
+         escreva ("Voce tem ", idade, " anos, ainda não tem idade para votar! ")
+      fimse
+   fimse
+
+
+fimalgoritmo

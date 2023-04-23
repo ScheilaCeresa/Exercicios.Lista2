@@ -1,0 +1,18 @@
+algoritmo "Exer3_Lista2"
+var
+    nome: caractere
+    nota1, nota2, media: real
+inicio
+       escreva ("Informe seu nome: ")
+       leia (nome)
+       escreva ("Informe suas notas: ")
+       leia (nota1, nota2)
+       
+       media <- (nota1 + nota2) /2
+       
+       se media >= 7 entao
+          escreva (nome, " teve um bom aproveitamento com media: ", media)
+       senao
+            escreva (nome, " não teve um bom aproveitamento com media: ", media)
+       fimse
+fimalgoritmo

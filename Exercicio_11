@@ -1,0 +1,24 @@
+algoritmo "Exer11_Lista2"
+var
+   largura, comprimento, a: real
+inicio
+      escreva ("Informe a largura da area: ")
+      leia (largura)
+      escreva ("Informe o comprimento da area: ")
+      leia (comprimento)
+      
+       a <- (largura*comprimento)
+       
+       se (a < 100) entao
+          escreval ("Este é um terreno popular! Com area de: ", a,"m²")
+       senao
+            se (a= 100) ou (a < 500) entao
+               escreval ("Este é um terreno master! Com area de: ", a,"m²")
+            senao
+                 escreval ("Este é um terreno VIP! Com area de: ", a,"m²")
+            fimse
+       fimse
+       
+       escreva (raizq(a))
+       
+fimalgoritmo

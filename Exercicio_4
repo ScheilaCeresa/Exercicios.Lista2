@@ -1,0 +1,17 @@
+algoritmo "Exer4_Lista2"
+var
+    num: inteiro
+inicio
+
+
+      escreva ("Informe um numero inteiro: ")
+      leia (num)
+      
+      se num div = 0 entao
+          escreva (num, " é um numero par ")
+      senao
+           escreva (num, " é um numero impar ")
+      fimse
+      
+         
+fimalgoritmo

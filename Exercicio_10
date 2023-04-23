@@ -1,0 +1,21 @@
+algoritmo "Exer10_Lista2"
+var
+   nota1, nota2, media: real
+inicio
+
+   escreva ("Informe suas notas: ")
+   leia (nota1, nota2)
+
+   media <- (nota1+nota2) /2
+
+   se (media <= 4.9) entao
+      escreva ("Voce esta reprovado! Com a nota: ", media)
+   senao
+      se (media >= 5) e (media <= 6.9) entao     // (media >7 )
+         escreva ("Voce esta de recuperacao! Com a nota:  ", media)
+      senao
+         escreva ("Voce esta aprovado! ", media)
+      fimse
+   fimse
+
+fimalgoritmo

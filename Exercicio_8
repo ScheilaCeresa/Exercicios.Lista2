@@ -1,0 +1,19 @@
+algoritmo "Exer8_Lista2"
+var
+    d, valor_passa: real
+inicio
+      escreva ("Informe a distancia da viagem que sera feita: ")
+      leia (d)
+      
+      se d <= 200 entao
+      
+         valor_passa <- d *0.50
+      
+        senao
+      
+             valor_passa <- d * 0.45
+      
+      fimse
+      
+      escreva ("Valor da passagem: ", valor_passa, " R$ Boa viagem!")
+fimalgoritmo

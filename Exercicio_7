@@ -1,0 +1,30 @@
+algoritmo "Exer7_Lista2"
+var
+   nome, sexo: caractere
+   valor_compra, dm, dh, valor_finalm, valor_finalh: real
+inicio
+
+   escreva ("Informe seu nome: ")
+   leia (nome)
+
+   repita
+      escreva ("Informe o sexo: ")
+      leia (sexo)
+   ate (sexo = "F") ou (sexo = "M")
+
+   escreva ("Informe o valor da compra: ")
+   leia (valor_compra)
+
+   dm <-  valor_compra*0.13
+   dh <- valor_compra*0.05
+   valor_finalm <- valor_compra - dm
+   valor_finalh <- valor_compra - dh
+
+   se (sexo = "F") entao
+      escreva ("Dado valido! Valor do desconto: ",dm," Valor final da compra: ", valor_finalm)
+   senao
+      escreva ("Dado valido! Valor do desconto: ",dh," Valor final da compra: ", valor_finalh)
+   fimse
+
+
+fimalgoritmo

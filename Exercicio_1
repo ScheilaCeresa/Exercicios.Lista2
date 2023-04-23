@@ -1,0 +1,15 @@
+algoritmo "Exer1_Lista2"
+var
+   velocidade, valor_multa: real
+inicio
+   escreva ("Informe a velocidade do carro: ")
+   leia (velocidade)
+
+   se (velocidade >= 80) entao
+      valor_multa<- (velocidade - 80) *5
+      escreva ("Você foi multado! ")
+
+   fimse
+   escreva ("O valor da multa é de: ", valor_multa)
+
+fimalgoritmo

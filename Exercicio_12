@@ -1,0 +1,33 @@
+algoritmo "Exer12_Lista2"
+var
+   nome: caractere
+   idade: inteiro
+   salario, novo_sala:real
+inicio
+   escreva ("Informe seu nome: ")
+   leia (nome)
+   escreva("Informe a quantos anos trabalha na empresa: ")
+   leia (idade)
+   escreva ("Informe seu salario: ")
+   leia (salario)
+
+   se (idade <= 3) entao
+      novo_sala <- salario *0.03
+
+   senao
+      se (idade >= 3) e (idade <= 10) entao
+         novo_sala <- salario*0.125
+
+      senao
+         novo_sala <- salario*0.20
+
+      fimse
+   fimse
+
+   escreval ("Nome do funcionario: ", nome)
+   escreval ("Anos de trabalho: ", idade)
+   escreval ("Antigo salario: ", salario)
+   escreval ("Acrecimo no salario de: ", novo_sala)
+   escreva ("Novo salario: ", novo_sala+salario)
+
+fimalgoritmo
